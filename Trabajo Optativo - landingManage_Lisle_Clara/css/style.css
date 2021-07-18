@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    background-image:url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position:50px -20px;
+    background-size: 110%;
+}
+
+header{
+    color: #242E52;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li{
+    display: none;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #242E52;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header nav ul li a:hover{
+    opacity: 60%;
+    cursor: hand;
+} 
+
+header nav i{
+  width: fit-content;
+  align-self: flex-end;
+} 
+
+header button.btn-header{
+    display: none;
+}
+
+/*---- tuve que repetir el bg porque la unica que tenia img era patron de tablet--*/
+main{
+    background: top right url(../img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 230px 400px;
+    background-size: 90%;
+}
+
+section.graficos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.graficos{
+    justify-content: center;
+}
+
+main section article.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section article.presentacion h1{
+    text-align: center;
+    color: #242E52;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+h2{
+    color: #242E52;
+    font-weight:bolder;
+    font-size: 30px;
+}
+
+section article.presentacion h2{
+    margin-top: 30px;
+    text-align: center;
+}
+   
+section article.presentacion p{
+    text-align: center;
+    font-size: 18px;
+}
+
+section article.presentacion-center p{
+    font-size: 16px;
+    color: rgb(143, 148, 167);
+}
+
+button.btn-started{
+    font-size: 13px;
+    color: rgb(249, 249, 249);
+    background-color: #F3603B;
+    width: 134px;
+    height: 44px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+article.presentacion button.btn-started{
+    margin-top: 20px;
+}
+
+article.text-center span{
+    display: block;
+    background-color: #F3603B;
+    width: 69px;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    color: rgb(249, 249, 249);
+    z-index: 20;
+    position: relative;
+    top: 45px;
+    padding-top: 8px;
+}
+
+h3{
+    font-size: 16px;
+    color: #323851;
+    font-weight: 700;
+}
+
+article.text-center h3{
+    width: 100%;
+    padding: 12px 0px 12px 80px;
+    background-color: #FFF0EC;
+}
+
+article.text-center p{
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16;
+    line-height:26px;
+    padding: 10px;
+}
+
+section.sec-bottom{
+    text-align: center;
+}
+
+section.sec-bottom div{
+    display: flex;
+}
+
+section.sec-bottom article.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sec-bottom div.box-comment{
+    background-color:#FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px;
+    margin: 0px 10px;
+}
+
+section.sec-bottom article.comment img{
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: 35px;
+}
+
+section.sec-bottom article.comment p{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(143, 148, 167);
+}
+
+section.sec-bottom article.comment:nth-child(odd){
+    display: none;
+}
+
+section.sec-bottom article.comment:nth-child(4){
+    display: none;
+}
+
+section.sec-bottom button.btn-started{
+    margin-top: 30px;
+}
+
+section.banner{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3613C;
+    opacity: 0.9;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section.banner h2{
+    color: #FFFFFF;
+    text-align: center;;
+}
+
+section.banner button.btn-banner{
+    background-color: #FFFFFF;
+    color: #F3613C;
+    width: 134px;
+    height: 44px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    transition: opacity 1s ease-in-out;
+}
+
+button.btn-started:hover{
+    opacity: 60%;
+    box-shadow: 0px  15px #FFF0EC;
+} 
+
+section.banner button.btn-banner:hover, .footer form button:hover{
+    opacity: 60%;
+}
+
+footer{
+    background-color: #1E1E26;
+    margin-top: 0px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer ul li{
+    display: inline;
+} 
+
+.footer ul li a i{
+    color: #FFFFFF;
+}
+
+.footer form{
+    margin-top: 50px;
+}
+
+.footer form button{
+    font-size: 13px;
+    color: rgb(249, 249, 249);
+    background-color: #F3603B;
+    width: 64px;
+    height: 42px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    margin-left: 20px;
+    transition: opacity 1s ease-in-out;
+    box-shadow: none;
+}
+
+.footer form input[type=text]{
+    font-size: 13px;
+    color: rgb(249, 249, 249);
+    background-color: #FFFFFF;
+    color: #A0A0A0;
+    width: 200px;
+    height: 44px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+}
+
+.footer div.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer div.list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer div.list ul li a{
+    text-decoration: none;
+    color: #FAFAFA;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer div.redes{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.footer div.redes ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer div.redes ul li a{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.footer img{
+    width: 145px;
+    height: 26px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+footer p{
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8C8C94;
+}
+
+@media only screen and (min-width: 380px) {
+    
+    body{
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-repeat:no-repeat;
+        background-position:120% -20%;
+        background-size: 50%;
+    }
+    
+    header img{
+        padding-top: 10px;
+    }
+    
+    header nav{
+        width: 60%;
+        display: flex;
+        
+    }
+    header nav i{
+        visibility: hidden;
+        width: 0%;
+    }
+
+    header nav ul{        
+        list-style: none;
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+    }
+
+    header nav ul li{
+        display: inline;
+    }
+        
+    header button.btn-header{
+        display: inline;
+    }
+
+    main{
+        background: top right url(../img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: -20% 50%;
+        background-size: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    main section.graficos{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    main section.graficos img{
+        width: 540;
+        height: 485px;
+    }
+
+    main section.graficos article{
+        width: 439px;
+        height: 386px;
+    }
+    
+    main section.graficos article h1, main section.graficos article p{
+        text-align: left;
+    }
+
+    main section.center{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }  
+
+    main section.center article.presentacion{
+        width:433px;
+        height: 212px;
+    }
+
+    main section.center article.presentacion h2, main section.center article.presentacion p{
+        text-align: left;
+    }
+
+    main section.center article.presentacion h2{
+        color: #232851;
+    }
+
+    main section.center article.presentacion p{
+        color: #000000;
+        padding-right: 20%;
+    }
+
+    main section.center article.text-center{
+        width: 516px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.center article.text-center h3{
+        background-color: inherit;
+    }
+
+    main section.center article.text-center p{
+        padding-left: 80px ;
+    }
+    
+    section.sec-bottom{
+        align-items: flex-start;
+        margin: 0px 30px;
+    }
+
+    section.sec-bottom div.box-comment{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    section.sec-bottom article.comment div.box-comment p{
+        height: 80px;
+    }
+
+    section.sec-bottom article.comment:nth-child(odd){
+        display: inline;
+    }
+    
+    section.sec-bottom article.comment:nth-child(4){
+        display: none;
+    }
+
+    section.sec-bottom button{
+        align-self: center;
+    }
+
+    section.banner{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 100px;
+        align-self: stretch;
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-blend-mode: soft-light;
+        margin-top: 100px;
+    }
+
+    section.banner h2{
+        width: 30%;
+        text-align: left;
+    }   
+    
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 100px;
+        align-items: center;
+    }
+
+    .footer div.redes{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120px;
+        width: 30%;
+    }
+    
+    .footer div.redes ul{
+        justify-content: space-evenly;
+    }
+
+    .footer div.list ul{
+        width: 30%;
+    }
+
+    .footer div.list ul li{
+        line-height: 30px;
+    }
+     
+    .footer form {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-self: flex-start;
+    }
+        
+    footer p{
+        text-align: end;
+        padding-right: 100px;
+        padding-bottom: 20px;
+    }
+}
